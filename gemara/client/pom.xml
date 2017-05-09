@@ -1,0 +1,62 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation = "http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<modelVersion>4.0.0</modelVersion>
+<parent>
+<groupId>de.fhws.ifactory.api</groupId>
+<artifactId>parent</artifactId>
+<version>0.0.1-SNAPSHOT</version>
+</parent>
+<artifactId>i-factory-client</artifactId>
+<packaging>jar</packaging>
+<name>i-factory Client Models</name>
+<description></description>
+<repositories>
+<!-- ###(repositories) You can edit below this line ### -->
+<!-- ###(repositories) You can edit above this line ### -->
+</repositories>
+<build>
+<sourceDirectory>src-gen</sourceDirectory>
+<plugins>
+<plugin>
+<artifactId>maven-compiler-plugin</artifactId>
+<version>3.0</version>
+<configuration>
+<source>1.7</source>
+<target>1.7</target>
+<fork>true</fork>
+<compilerVersion>1.7</compilerVersion>
+<showDeprecation>true</showDeprecation>
+<showWarnings>true</showWarnings>
+<fork>true</fork>
+<encoding>utf-8</encoding>
+</configuration>
+</plugin>
+<plugin>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-jar-plugin</artifactId>
+<version>2.6</version>
+<executions>
+<execution>
+<id>make-a-jar</id>
+<phase>compile</phase>
+<goals>
+<goal>jar</goal>
+</goals>
+</execution>
+</executions>
+</plugin>
+</plugins>
+</build>
+<dependencies>
+<dependency>
+<groupId>de.fhws.applab.gemara</groupId>
+<artifactId>gemara-core</artifactId>
+<version>0.1.0-SNAPSHOT</version>
+</dependency>
+<dependency>
+<groupId>de.fhws.applab.gemara</groupId>
+<artifactId>shaklewell</artifactId>
+<version>0.1.0-SNAPSHOT</version>
+</dependency>
+</dependencies>
+</project>

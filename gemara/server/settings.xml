@@ -1,0 +1,10 @@
+<!-- Copy this file to $HOME/.m2/settings.xml -->
+<settings>
+<servers>
+<server>
+<id>CHANGE: profile-id</id>
+<username>CHANGE: your name</username>
+<password>CHANGE: your password</password>
+</server>
+</servers>
+</settings>
